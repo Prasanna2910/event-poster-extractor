@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 class APIClient:
     """Client for Flask backend API"""
     
-    def __init__(self, base_url="http://localhost:6100/api"):
+    def __init__(self, base_url="https://event-poster-extractor.onrender.com/api"):
         self.base_url = base_url
         self.session = requests.Session()
     
